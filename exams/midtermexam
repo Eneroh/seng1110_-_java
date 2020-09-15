@@ -48,4 +48,15 @@ public class midTermexam {
 
 ________________________________________________________________________________________________
 
+import java.util.*;
+
+public class midTermexam {
+
+	public String exampleMethod(int n, char ch)	{
+		return("test");
+	}
+}
+
+_________________________________________________________________________________________________
+
 
