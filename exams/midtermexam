@@ -79,3 +79,184 @@ public class midTermexam {
 
 ____________________________________________________________________________________________________
 
+import java.util.*;
+
+public class midTermexam {
+
+	public static void main(String[] args) {
+		Scanner console = new Scanner(System.in);
+			int x = 0;
+			int y = 10;
+			String hi = "test";
+			char result = hi.charAt(0);
+			for(x = 1; x < y; x = x * 2) {
+				System.out.println(x);
+				System.out.println(result);
+				System.out.println(hi);
+			}
+	}
+}
+
+_______________________________________________________________________________________________________
+
+import java.util.*;
+
+public class midTermexam {
+
+	public static void main(String[] args) {
+		Scanner console = new Scanner(System.in);
+			double first_item = 0;
+			double second_item = 0;
+			double total = 0;
+			
+			System.out.print("Price of item 1 = ");
+			first_item = console.nextDouble();
+			System.out.print("Price of item 2 = ");
+			second_item = console.nextDouble();
+			
+			total = first_item + second_item;
+
+			System.out.print("Total price is " + total);
+	}
+}
+
+___________________________________________________________________________________________________________
+
+import java.util.*;
+import javax.swing.*;
+
+public class midTermexam {
+
+	public static void main(String[] args) {
+			double first_item = 0;
+			double second_item = 0;
+			double total = 0;
+		
+			first_item = Double.parseDouble(JOptionPane.showInputDialog("first_item"));
+			second_item = Double.parseDouble(JOptionPane.showInputDialog("second_item"));
+				
+			total = first_item + second_item;
+
+			JOptionPane.showMessageDialog(null,"Total price is " + total,"",JOptionPane.INFORMATION_MESSAGE);
+	}
+}
+
+____________________________________________________________________________________________________________
+
+import java.util.*;
+
+public class midTermexam {
+
+	public static void main(String[] args) {
+		Scanner console = new Scanner(System.in);
+
+		int songs = 0;
+		double total = 0;
+		
+		System.out.print("How many songs? ");
+
+		songs = console.nextInt();
+
+		if (songs < 10) {
+			total = 1.20 * songs;
+			System.out.println(total);
+		}
+		else if (songs >= 10 && songs <= 50) {
+			total = 1.00 * songs;
+			System.out.println(total);
+		}
+		else if (songs > 50) {
+			total = songs * 0.90;
+			System.out.println("10% discount applied");
+		}
+		System.out.println("Your total is " + total);
+	}
+}
+
+________________________________________________________________________________________________________________
+
+import java.util.*;
+import javax.swing.*;
+
+public class midTermexam {
+
+	public static void main(String[] args) {
+		int songs = 0;
+		double total = 0;
+
+		songs = Integer.parseInt(JOptionPane.showInputDialog("How many songs? "));
+
+		if (songs < 10) {
+			total = 1.20 * songs;
+			JOptionPane.showMessageDialog(null,"Total price is " + total,"", JOptionPane.INFORMATION_MESSAGE);
+		}
+		else if (songs >= 10 && songs <= 50) {
+			total = 1.00 * songs;
+			JOptionPane.showMessageDialog(null,"Total price is " + total,"", JOptionPane.INFORMATION_MESSAGE);
+			
+		}
+		else if (songs > 50) {
+			total = songs * 0.90;
+			JOptionPane.showMessageDialog(null,"Total price is " + total,"", JOptionPane.INFORMATION_MESSAGE);
+		}
+	}
+}
+
+____________________________________________________________________________________________________________________
+
+import java.util.*;
+import javax.swing.*;
+
+public class midTermexam {
+
+	public static void main(String[] args) {
+		int songs = 0;
+		double total = 0;
+
+		while (total <= 0) {
+		songs = Integer.parseInt(JOptionPane.showInputDialog("How many songs? "));
+
+		if (songs < 10 && songs >= 0) {
+			total = 1.20 * songs;
+			JOptionPane.showMessageDialog(null,"Total price is " + total,"", JOptionPane.INFORMATION_MESSAGE);
+		}
+		else if (songs >= 10 && songs <= 50) {
+			total = 1.00 * songs;
+			JOptionPane.showMessageDialog(null,"Total price is " + total,"", JOptionPane.INFORMATION_MESSAGE);
+			
+		}
+		else if (songs > 50) {
+			total = songs * 0.90;
+			JOptionPane.showMessageDialog(null,"Total price is " + total,"", JOptionPane.INFORMATION_MESSAGE);
+		}
+		else {
+			JOptionPane.showMessageDialog(null,"Error please enter value","", JOptionPane.INFORMATION_MESSAGE);
+			continue;
+			}
+		}
+	}
+}
+
+______________________________________________________________________________________________________________________
+
+import java.util.*;
+import javax.swing.*;
+
+public class midTermexam {
+
+	public static void main(String[] args) {
+		Scanner console = new Scanner(System.in);
+		int n = 1;
+		int fact = 1;
+		int number = 5;
+		System.out.println("Convert number to factorial: ");
+		number = console.nextInt();
+		
+		for(n = 1; n <= number ; n++) { 
+			fact = fact * n;
+		}
+		System.out.println("Factorial of " + number + " is: " + fact);
+	}
+}
+_______________________________________________________________________________________________________________________
+
