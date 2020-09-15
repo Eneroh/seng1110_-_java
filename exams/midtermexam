@@ -260,3 +260,24 @@ public class midTermexam {
 }
 _______________________________________________________________________________________________________________________
 
+import java.util.*;
+import javax.swing.*;
+
+public class midTermexam {
+
+	public static void main(String[] args) {
+		Scanner console = new Scanner(System.in);
+		int n = 1;
+		int fact = 1;
+		int number = 5;
+		number = Integer.parseInt(JOptionPane.showInputDialog("Convert number to factorial: "));
+		
+		for(n = 1; n <= number ; n++) { 
+			fact = fact * n;
+		}
+		JOptionPane.showMessageDialog(null, "Factorial of " + number + " is: " + fact,"", JOptionPane.INFORMATION_MESSAGE);
+	}
+}
+
+________________________________________________________________________________________________________________________
+
