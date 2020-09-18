@@ -30,3 +30,31 @@ public class workingout {
 		System.out.println(x);
 	}	
 }
+
+____________________________________________________________________
+
+import java.util.*;
+import javax.swing.*;
+
+public class workingout {
+	
+	public static void main(String[] args) {
+		Scanner console = new Scanner(System.in);
+		double vmax = 10, standard = 7, total = 0;
+		while (total <= 0) {
+			System.out.println("How many STANDARD tickets? ");
+			standard = console.nextInt();
+			System.out.println("How many VMAX tickets? ");
+			vmax = console.nextInt();
+			if (vmax > 5) {
+				total = vmax * 0.90;
+				System.out.println("10% discount applied");
+			} else {
+				total = standard * 1;
+			}
+		} System.out.println("Your total is: " + "$" + total);
+	}
+}
+
+_________________________________________________________________________
+
