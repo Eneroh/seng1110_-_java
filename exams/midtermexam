@@ -281,3 +281,28 @@ public class midTermexam {
 
 ________________________________________________________________________________________________________________________
 
+import java.util.*;
+import javax.swing.*;
+
+public class workingout {
+
+	public static void main(String[] args) {
+		Scanner console = new Scanner(System.in);
+		int n = 1;
+		int fact = 1;
+		int count = 1;
+		int x = 2;
+		System.out.println("Input number value: ");
+		n = console.nextInt();
+		System.out.println("Input x value: ");
+		x = console.nextInt();
+
+		for(count = 1; count <= n; count++) {
+			fact = fact + n * x;
+		}
+		System.out.println("The final value is: " + fact);
+	}
+}
+
+__________________________________________________________________________________________________________
+
